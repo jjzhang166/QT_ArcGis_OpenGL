@@ -13,8 +13,18 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    form3d.cpp \
+    formexcel.cpp \
+    opengl/glwidget.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    form3d.h \
+    formexcel.h \
+    opengl/glwidhet.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    form3d.ui \
+    formexcel.ui
+
+QT += core gui opengl
