@@ -13,18 +13,38 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    form3d.cpp \
-    formexcel.cpp \
-    opengl/glwidget.cpp
+    opengl/glwidget.cpp \
+    frmmain.cpp \
+    frmmessagebox.cpp \
+    initform.cpp \
+    mainform.cpp \
+    paint2ddialog.cpp \
+    paint2dform.cpp \
+    paint3dform.cpp \
+    helper/iconhelper.cpp
 
-HEADERS  += mainwindow.h \
-    form3d.h \
-    formexcel.h \
-    opengl/glwidhet.h
+HEADERS  += \
+    opengl/glwidhet.h \
+    frmmain.h \
+    frmmessagebox.h \
+    initform.h \
+    mainform.h \
+    paint2ddialog.h \
+    paint2dform.h \
+    paint3dform.h \
+    helper/iconhelper.h \
+    helper/myhelper.h
 
-FORMS    += mainwindow.ui \
-    form3d.ui \
-    formexcel.ui
+FORMS    += \
+    frmmain.ui \
+    frmmessagebox.ui \
+    initform.ui \
+    mainform.ui \
+    paint2ddialog.ui \
+    paint2dform.ui \
+    paint3dform.ui
 
 QT += core gui opengl
+CONFIG += qaxcontainer
+RESOURCES += \
+    rc.qrc
